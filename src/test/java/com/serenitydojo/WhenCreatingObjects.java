@@ -31,4 +31,14 @@ public class WhenCreatingObjects {
         Assert.assertEquals(fido.getFavoriteToy(), "Bone");
         Assert.assertEquals(fido.getAge(), 5);
     }
+
+    @Test
+    public void cat_makes_noise() {
+        Cat felix = new Cat("Felix", "Tuna", 3);
+
+        felix.makeNoise();
+        felix.feed("Tuna");
+
+        felix.groom();
+    }
 }
